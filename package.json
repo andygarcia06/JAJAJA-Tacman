@@ -4,7 +4,7 @@
   "description": "HTML5 / JavaScript DOM based remake of the classic Ms Pac-Man game",
   "main": "dist/index.html",
   "scripts": {
-    "start": "webpack serve --open index.html",
+    "start": "webpack serve --open src/index.html",
     "build": "npm run clean && cross-env NODE_ENV=production webpack",
     "clean": "rimraf ./dist",
     "test": "mocha --require @babel/register --require jsdom-global/register --reporter nyan test/*.js",

@@ -1,0 +1,20 @@
+name: Continuous Integration
+
+on:
+  push:
+    branches:
+      - master 
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout le code
+        uses: actions/checkout@v2
+
+      - name: Installer les dépendances
+        run: npm install
+
+      - name: Exécuter npm start
+        run: npm start
